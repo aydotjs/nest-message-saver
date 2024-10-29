@@ -1,9 +1,10 @@
-import { IsString } from 'class-validator';
+import { IsString, IsNumber } from 'class-validator';
 
 export class CreateMessageDto {
   @IsString()
-  content: string;
-  
+  full_name: string;
+  @IsNumber()
+  age: number;
   @IsString()
   date_created: string;
 }
