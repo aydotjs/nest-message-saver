@@ -5,5 +5,5 @@ export class CreateMessageDto {
   title: string;
 
   @IsString()
-  date_created: string;
+  author: string;
 }
